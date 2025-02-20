@@ -10,10 +10,54 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Bodyfont';
+  src: url('fonts/bodyfont.woff2') format('woff2'),
+       url('fonts/bodyfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'HeadingFont';
+  src: url('fonts/headingfont.woff2') format('woff2'),
+       url('fonts/headingfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html{
+  font-family: 'BodyFont';
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 1rem;
+}
+
 body {
   margin: 0 auto;
   min-width: 1000px;
   max-width: 1400px;
+}
+
+h1,h2 {
+  font-family: 'HeadingFont', serif;
+  letter-spacing: 0.1em;
+
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+p, li {
+  font-size: 1rem;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
 }
 
 /* Layout */
@@ -46,6 +90,7 @@ header, section, aside, nav, footer {
 header, footer {
   border-top: 5px solid #a66;
   border-bottom: 5px solid #a66;
+
 }
 
     </style>
@@ -59,7 +104,7 @@ header, footer {
   <section>
       <h2>Brave new world</h2>
 
-      <p>It's a brave new world out there. Our children are being put in increasing more competitive situations, both during recreation, and as they start to move into the adult world of <a href="https://en.wikipedia.org/wiki/Examination">examinations</a>, <a href="https://en.wikipedia.org/wiki/Jobs">jobs</a>, <a href="https://en.wikipedia.org/wiki/Career">careers</a>, and other life choices. Having the wrong mindset, becoming <a href="https://en.wikipedia.org/wiki/Emotion">too emotional</a>, or making the wrong choices can contribute to them experiencing difficulty in taking their rightful place in today's ideal society.</p>
+      <p>It's a brave new world out there. Our children are being put in increasing more competitive situations, both during recreation, and as they start to move into the adult world of <a href="https://en.wikipedia.org/wiki/Examination">examinations <img src="external-link-15.png" ></a>, <a href="https://en.wikipedia.org/wiki/Jobs">jobs <img src="external-link-15.png"></a>, <a href="https://en.wikipedia.org/wiki/Career">careers <img src="external-link-15.png"></a>, and other life choices. Having the wrong mindset, becoming <a href="https://en.wikipedia.org/wiki/Emotion">too emotional <img src="external-link-15.png"></a>, or making the wrong choices can contribute to them experiencing difficulty in taking their rightful place in today's ideal society.</p>
 
       <p>As concerned parents, guardians or carers, you will no doubt want to give your children the best possible start in life — and you've come to the right place.</p>
 
