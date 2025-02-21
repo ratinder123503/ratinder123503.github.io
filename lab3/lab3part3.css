@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Bodyfont';
+  src: url('fonts/bodyfont.woff2') format('woff2'),
+       url('fonts/bodyfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'HeadingFont';
+  src: url('fonts/headingfont.woff2') format('woff2'),
+       url('fonts/headingfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html{
+  font-family: 'BodyFont';
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 1rem;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+h1,h2 {
+  font-family: 'HeadingFont', serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-top: 20px;
+}
+
+p, li {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  padding: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.5rem;
+  display: block;
+  color: #a66;
+  border: 1px solid #a66;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  background-color: white;
+}
+
+ul, ol {
+  list-style-type: square;
+  margin-left: 1.5rem;
+}
+
+a {
+  color: #a66;
+  text-decoration: underline;
+  outline: none;
+}
+
+a:hover, a:focus {
+  color: white;
+  text-decoration: none;
+  background: #a66;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+  text-align: center;
+
+}
