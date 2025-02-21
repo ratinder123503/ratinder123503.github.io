@@ -1,4 +1,21 @@
 body {
     font-family: impact, sans-serif;
 }
+
+div {
+    background-color: red;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 5);
+    
+}
   
