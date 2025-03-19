@@ -27,4 +27,10 @@ newImage.addEventListener('click', function () {
 });
 thumbBar.appendChild(newImage);
 }
-/* Wiring up the Darken/Lighten button */  
+/* Wiring up the Darken/Lighten button */ 
+btn.addEventListener('click', function () ) {
+    const btnClass = btn.getAttribute('class');
+    if (btnClass === 'dark') {
+        btn.setAttribute('class', 'light');
+    }
+} 
