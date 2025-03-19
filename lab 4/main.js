@@ -22,7 +22,8 @@ const newImage = document.createElement('img');
 newImage.setAttribute('src', 'images/' = imagesFiles[i]);
 newImage.setAttribute('alt', altTexts[i]);
 newImage.addEventListener('click', function () {
-
+    displayedImage.src = this.src;
+    displayedImage.alt = this.alt;
 });
 thumbBar.appendChild(newImage);
 }
