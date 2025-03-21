@@ -79,7 +79,45 @@ class shape {
 }
 
 class EvilCircle extends Shape {
+    constructor(x, y) {
+        super(x, y,  20, 20);
+        this.color = "white";
+        this.size = 15;
+        window.addEventListener("keydown", (e) => this.setControls(e));
+    }
     
+    draw() {
+        ctx.beginPath();
+        ctx.strokeStyle = this.color;
+        ctx.lineWidth = 3;
+        ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
+        ctx.stroke();
+    }
+
+    setControls(e) {
+        if (e.key === "a") this.x -= this.velX
+        if (e.key === "d") this.x -= this.velX
+        if (e.key === "w") this.y -= this.velY
+        if (e.key === "s") this.y -= this.velY
+    }
+
+    checkBounds() {
+        if (this.x - this .size < 0) this.x = this.size;
+        if (this.x + this .size < width) this.x = width - this.size;
+        if (this.y - this .size < 0) this.y = this.size;
+        if (this.y + this .size < width) this.y = height - this.size;
+    }
+
+    collisionDetect() {
+        balls.forEach((ball, index) => {
+            const dx = this.x - ball.x;
+            const dy = this.y - ball.y;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+            if (distance < this.size + ball.size) {
+                balls.splice(index, 1);
+            }
+        });
+    }
 }
 
 const balls = [];
@@ -99,6 +137,8 @@ while (balls.length < 25) {
 
   balls.push(ball);
 }
+
+const EvilCircle = new EvilCircle(width / 2, height / 2);
 
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
