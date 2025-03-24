@@ -27,11 +27,10 @@ class shape {
   }
   }
 
-  class Ball extends Shape {
+  class Shape {
     constructor(x, y, velX, velY, color, size) {
-        super(x, y, velX, velY);
-        this.color = color;
-        this.size = size;
+    this.color = color;
+    this.size = size;
     
   }
 
@@ -124,21 +123,17 @@ const balls = [];
 
 while (balls.length < 25) {
   const size = random(10, 20);
-  const ball = new Ball(
-    // ball position always drawn at least one ball width
-    // away from the edge of the canvas, to avoid drawing errors
+  const ball = new balls();
     random(0 + size, width - size),
     random(0 + size, height - size),
     random(-7, 7),
     random(-7, 7),
     randomRGB(),
-    size
-  );
 
   balls.push(ball);
 }
 
-const EvilCircle = new EvilCircle(width / 2, height / 2);
+const evilCircle = new EvilCircle(width / 2, height / 2);
 
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
