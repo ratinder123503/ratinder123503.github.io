@@ -19,7 +19,7 @@ const altTexts = [
 /* Looping through images */
 for (let i = 0; i <imagesFiles.length; i++) {
 const newImage = document.createElement('img');
-newImage.setAttribute('src', 'images/' + imagesFiles[i]);
+newImage.setAttribute('src', './images/' + imagesFiles[i]);
 newImage.setAttribute('alt', altTexts[i]);
 newImage.addEventListener('click', function () {
     displayedImage.src = this.src;
