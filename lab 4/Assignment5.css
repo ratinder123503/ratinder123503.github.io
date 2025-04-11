@@ -3,12 +3,11 @@
 html, body {
     margin: 0;
     padding: 0;
-  }
-  
-  html {
     font-size: 10px;
-    background-color: #dde;
+    background-color: white;
+    color: black;
   }
+
   
   body {
     width: 80%;
@@ -18,14 +17,34 @@ html, body {
   
   /* || typography */
   
-  font[size="7"], font[size="6"], font[size="5"] {
+h1, h2, h3 {
     font-family: 'Sonsie One', cursive;
     color: #2a2a2a;
+  }
+
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: white;
+    background-color: #222;
+    padding: 1rem;
+    text-shadow: 2px 2px 10px black;
+  }
+
+  h2{
+    font-size: 2.2rem;
+    margin-top: 1.5rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+    margin-top: 1.5rem;
   }
   
   p, input, li, table, label {
     font-family: 'Open Sans Condensed', sans-serif;
     color: #2a2a2a;
+    line-height: 1.5;
   }
   
   font[size="7"] {
@@ -51,8 +70,8 @@ html, body {
   
   /* || header layout */
   
-  div[class="nav"], article, footer, .secondary {
-    background-color: green;
+  nav, article, footer, .secondary {
+    background-color: white;
   }
   
   article, footer, .secondary {
@@ -61,6 +80,7 @@ html, body {
   
   article {
     margin-right: 10px;
+    flex: 5;
   }
   
   div[class="nav"] {
@@ -99,7 +119,7 @@ html, body {
     height: 100%;
     padding: 0 2em;
   }
-  
+   
   .search input {
     font-size: 1.6rem;
     height: 32px;
@@ -142,6 +162,13 @@ html, body {
     background-color: #dde;
     border-collapse: collapse;
   }
+
+  caption {
+    caption-side: top;
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+  }
   
   th, td {
     padding: 10px;
@@ -168,6 +195,7 @@ html, body {
   
   audio {
     width: 500px;
+    max-width: 500px;
   }
   
   /* Comments styling */
@@ -179,6 +207,14 @@ html, body {
   
   .show-hide {
     cursor: pointer;
+    text-align: center;
+    width: 150px;
+    margin: 1rem auto;
+    background: #333;
+    color: white;
+    border: none;
+    font-size: 1.6rem;
+    padding: 0.5rem;
   }
   
   .comments font[size="6"] {
@@ -226,6 +262,7 @@ html, body {
   }
   
   .comment-form input[type="submit"] {
+    display: block;
     width: 30%;
     display: block;
     margin: 0 auto;
@@ -238,6 +275,7 @@ html, body {
   .comment-container li {
     list-style-type: none;
     display: flex;
+    padding: 0.5rem 0;
   }
   
   .comment-container li p:nth-child(1) {
