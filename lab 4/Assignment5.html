@@ -108,26 +108,31 @@
         <audio controls aria-label="Audio fact about bear mating rituals">
           <source src="media/bear.mp3" type="audio/mp3">
           <source src="media/bear.ogg" type="audio/ogg">
-          <p>It looks like your browser doesn't support HTML5 audio players.</p>
+          <p>It looks like your browser doesn't support HTML5 audio players. 
+            Listen to the audio at <a href="media/bear.mp3">this link></a>
+          </p>
         </audio>
-
+        <section aria-label="Transcript of bear mating audio">
+            <h4>Transcript</h4>
+            <p>Bears communicate affection by decorating their dens with leaves, twigs, and sometimes even stolen human objects. These displays are believed to attract potential mates by showcasing creativity and nesting ability.</p>
+        </section>
         <aside>
 
-          <font size="5">About the author</font>
-        <br><br>
-          Evan Wild is an unemployed plumber from Doncaster, who has been really "in to" wildlife since childhood. He once went to Chester Zoo on holiday, but got ill after eating a doner kebab.
-        <br><br>
-          He has never seen a bear, but once read a Daily Mail article about them, and thinks they sound cool.
+          <h3>About the author</h3>
+
+        <p>Evan Wild is an unemployed plumber from Doncaster, who has been really "in to" wildlife since childhood. He once went to Chester Zoo on holiday, but got ill after eating a doner kebab.</p>
+
+        <p>He has never seen a bear, but once read a Daily Mail article about them, and thinks they sound cool.</p>
 
         </aside>
         <section class="comments">
-          <div class="show-hide">Show comments</div>
+          <button class="show-hide" aria-expanded="false">Show comments</button>
 
-          <div class="comment-wrapper">
+          <div class="comment-wrapper" hidden>
 
-            <font size="6">Add comment</font>
+            <h3>Add comment</h3>
 
-            <form class="comment-form">
+            <form class="comment-form" aria-label="Comment form">
               <div class="flex-pair">
                 Your name:
                 <input type="text" name="name" id="name" placeholder="Enter your name">
